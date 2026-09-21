@@ -99,3 +99,127 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.text_italic {
+  color: var(--text-accent);
+  font-style: oblique;
+}
+
+.link {
+  position: relative;
+  font-weight: var(--font-semi-bold);
+  color: var(--text-dark);
+  line-height: 150%;
+  border-bottom: 8px solid transparent;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  opacity: 0;
+  background-color: var(--text-dark);
+  transition: all 0.4s ease-in-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover::after {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.header-block__title {
+  font-size: var(--h2-font-size);
+  line-height: 125%;
+  font-style: normal;
+}
+
+/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  margin-bottom: 2rem;
+}
+
+/*========== logo ==========*/
+.header__logo {
+  width: 100px;
+  height: 60px;
+}
+
+.logo {
+  pointer-events: none;
+}
+
+.logo__icon {
+  width: 100px;
+  height: 60px;
+}
+
+/*========== header menu ==========*/
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 894px;
+}
+
+/*========== menu ==========*/
+.menu {
+  width: 456px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item,
+.image-link {
+  height: 28px;
+}
+
+/*========== coffee-menu ==========*/
+.coffee__icon {
+  margin-left: 0.4rem;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+
+/*========== burger ===========*/
+.menu__icon {
+  display: none;
+}
+
+/*=============== MAIN ===============*/
+.main {
+  flex: 1 1 auto;
+}
