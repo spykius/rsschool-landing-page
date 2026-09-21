@@ -392,3 +392,63 @@ img {
 .dash_active {
   background-color: var(--border-dark);
 }
+
+/*========== about ===========*/
+.about__container {
+  margin-bottom: 10rem;
+}
+
+.about__header {
+  margin-bottom: 4rem;
+}
+
+.about__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -2rem;
+}
+
+.about__column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 2rem;
+}
+
+.about__image-box {
+  max-width: 660px;
+  border-radius: 20px;
+  background-size: 726px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.4s ease;
+}
+
+.about__image-box:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.about__column:first-child .about__image-box:first-child {
+  height: 590px;
+  background-image: url('../../assets/images/about/1.jpg');
+}
+
+.about__column:first-child .about__image-box:last-child {
+  height: 430px;
+  background-image: url('../../assets/images/about/2.jpg');
+}
+
+.about__column:last-child .about__image-box:first-child {
+  height: 430px;
+  background-image: url('../../assets/images/about/3.jpg');
+}
+
+.about__column:last-child .about__image-box:last-child {
+  height: 590px;
+  background-image: url('../../assets/images/about/4.jpg');
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about__image-box:hover {
+    background-size: 660px;
+  }
+}
