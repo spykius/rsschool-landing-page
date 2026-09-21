@@ -1,0 +1,101 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --text-dark: #403f3d;
+  --text-light: #e1d4c9;
+  --text-accent: #b0907a;
+  --background-body: #e1d4c9;
+  --background-container: #665f55;
+  --background-backdrop: rgba(64, 63, 61, 0.8);
+  --border-light: #c1b6ad;
+  --border-dark: #665f55;
+
+  /*========= Font and typography ==========*/
+  /* 1rem = 10px*/
+  --html-font-size: 62.5%;
+  --body-font: 'Inter', sans-serif;
+  --h1-font-size: 7.2rem;
+  --h2-font-size: 6rem;
+  --h3-font-size: 2.4rem;
+  --big-font-size: 3.2rem;
+  --medium-font-size: 1.6rem;
+  --small-font-size: 1rem;
+
+  /*========= Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+}
+
+/*========== Responsive typography ==========*/
+@media screen and (max-width: 730px) {
+  :root {
+    --h1-font-size: 6.2rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  :root {
+    --h1-font-size: 5.2rem;
+    --h2-font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  :root {
+    --h1-font-size: 4.2rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: var(--html-font-size);
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--body-font);
+  font-size: var(--medium-font-size);
+}
+
+body {
+  height: 100%;
+  font-style: normal;
+  font-weight: var(--font-regular);
+  line-height: 150%;
+  background-color: var(--background-body);
+  color: var(--text-dark);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--font-semi-bold);
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
