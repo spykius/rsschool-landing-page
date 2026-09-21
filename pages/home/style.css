@@ -223,3 +223,72 @@ img {
 .main {
   flex: 1 1 auto;
 }
+
+/*========== hero ===========*/
+.hero__container {
+  margin-bottom: 10rem;
+}
+
+.hero__box {
+  background: url('../../assets/images/img-hero.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  padding: 10.1rem 10rem 10rem;
+}
+
+.hero__content {
+  max-width: 530px;
+}
+
+.hero__title {
+  color: var(--text-light);
+  font-size: var(--h1-font-size);
+  line-height: 105%;
+  margin-bottom: 4rem;
+}
+
+.hero__text {
+  color: var(--text-light);
+  margin-bottom: 4rem;
+}
+
+.button-primary {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  padding: 2rem 0;
+  border-radius: 100px;
+  background: var(--background-body);
+  font-weight: var(--font-semi-bold);
+  color: var(--text-dark);
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-primary__text {
+  transition: all 0.4s ease-out;
+}
+
+.coffee-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 2.6rem;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button-primary:hover .coffee-icon {
+    opacity: 1;
+  }
+
+  .button-primary:hover .button-primary__text {
+    margin-right: 2.9rem;
+  }
+}
