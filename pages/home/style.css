@@ -110,6 +110,17 @@ img {
   overflow: hidden;
 }
 
+body.dark {
+  --text-dark: #e1d4c9;
+  --text-light: #e1d4c9;
+  --text-accent: #b0907a;
+  --background-body: #292826;
+  --background-container: #403f3d;
+  --background-backdrop: rgba(41, 40, 38, 0.8);
+  --border-light: #665f55;
+  --border-dark: #c1b6ad;
+}
+
 ._container {
   max-width: 1440px;
   margin: 0 auto;
@@ -166,6 +177,7 @@ img {
   align-items: center;
   min-height: 60px;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 /*========== logo ==========*/
@@ -181,6 +193,7 @@ img {
 .logo__icon {
   width: 100px;
   height: 60px;
+  color: var(--text-dark);
 }
 
 /*========== header menu ==========*/
@@ -214,6 +227,45 @@ img {
   vertical-align: top;
 }
 
+.theme-btn {
+  position: absolute;
+  right: 136px;
+  border: 1px solid var(--border-light);
+  border-radius: 100px;
+  padding: 3px;
+  width: 88px;
+  height: 44px;
+}
+
+.theme-btn__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-btn__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.theme-btn_active {
+  border-radius: 100px;
+  background-color: var(--text-accent);
+}
+
+.theme-btn__icon {
+  width: 22px;
+  height: 22px;
+}
+
+[data-theme='dark'] .theme-btn__icon {
+  color: var(--text-dark);
+}
+
 /*========== burger ===========*/
 .menu__icon {
   display: none;
@@ -227,6 +279,7 @@ img {
 /*========== hero ===========*/
 .hero__container {
   margin-bottom: 10rem;
+  user-select: none;
 }
 
 .hero__box {
@@ -339,10 +392,11 @@ img {
 @media (hover: hover) and (pointer: fine) {
   .button-control:hover {
     background-color: var(--background-container);
+    border-color: var(--background-container);
   }
 
   .button-control:hover .button-control-icon {
-    stroke: var(--border-light);
+    stroke: var(--text-light);
   }
 }
 
@@ -489,7 +543,7 @@ img {
   width: 200px;
   padding: 1.2rem 2rem;
   border-radius: 100px;
-  background-color: var(--text-light);
+  background-color: transparent;
   border: 1px solid var(--border-dark);
   color: var(--text-dark);
   font-weight: var(--font-semi-bold);
@@ -522,6 +576,7 @@ img {
   .button-mobile:hover {
     color: var(--text-light);
     background-color: var(--background-container);
+    border-color: var(--background-container);
   }
 
   .button-mobile:hover .button-mobile-icon {
@@ -589,6 +644,7 @@ img {
 @media (hover: hover) and (pointer: fine) {
   .socials__link:hover {
     background-color: var(--background-body);
+    border-color: var(--background-body);
   }
 
   .socials__link:hover .social-link-icon {
@@ -645,6 +701,10 @@ img {
     width: 650px;
   }
 
+  .menu {
+    width: 400px;
+  }
+
   .hero__box {
     padding: 10rem 8rem;
   }
@@ -689,7 +749,11 @@ img {
 
 @media screen and (max-width: 880px) {
   .header__menu {
-    width: 570px;
+    width: 580px;
+  }
+
+  .menu {
+    width: 380px;
   }
 
   .footer__box {
@@ -802,6 +866,11 @@ img {
     margin-left: 0.8rem;
     width: 40px;
     height: 40px;
+    color: var(--text-dark);
+  }
+
+  .theme-btn {
+    right: 108px;
   }
 
   .hero__box {
@@ -842,6 +911,10 @@ img {
 @media screen and (max-width: 570px) {
   ._container {
     padding: 0 2rem;
+  }
+
+  .theme-btn {
+    right: 72px;
   }
 }
 
