@@ -25,7 +25,9 @@
     localStorage.setItem('theme', theme);
   }
 
-  const saved = localStorage.getItem('theme');
+  const saved =
+    localStorage.getItem('theme') ||
+    (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   applyTheme(saved);
 
   themeBtn.addEventListener('click', (e) => {
