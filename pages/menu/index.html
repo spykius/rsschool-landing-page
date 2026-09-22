@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../../assets/favicon/site.webmanifest" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--==================== HEADER ====================-->
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__logo">
+            <a class="logo" href="../home/index.html">
+              <svg class="logo__icon">
+                <use xlink:href="../../assets/svg/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="header__menu">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="../home/index.html#favorite-coffee" class="menu__link link"
+                    >Favorite coffee</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a href="../home/index.html#about" class="menu__link link">About</a>
+                </li>
+                <li class="menu__item">
+                  <a href="../home/index.html#mobile-app" class="menu__link link">Mobile app</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#contacts" class="menu__link link">Contact us</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__coffee-menu image-link">
+              <a class="image-link__link link" href="#no_scroll">
+                Menu
+                <svg class="coffee__icon">
+                  <use xlink:href="../../assets/svg/sprite.svg#coffee-cup"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="header__theme-btn theme-btn">
+            <div class="theme-btn__container">
+              <div class="theme-btn__box theme-btn_active" data-theme="light">
+                <svg class="theme-btn__icon">
+                  <use xlink:href="../../assets/svg/sprite.svg#sun"></use>
+                </svg>
+              </div>
+              <div class="theme-btn__box" data-theme="dark">
+                <svg class="theme-btn__icon">
+                  <use xlink:href="../../assets/svg/sprite.svg#moon"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="menu__icon">
+            <span></span>
+          </div>
+        </div>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+        <!--==================== CH-MENU ====================-->
+        <section class="ch-menu" id="ch-menu">
+          <div class="ch-menu__container _container">
+            <div class="ch-menu__header header-block">
+              <h1 class="header-block__title">
+                Behind each of our cups hides an <span class="text_italic">amazing surprise</span>
+              </h1>
+            </div>
+            <div class="ch-menu__body">
+              <div class="ch-menu__buttons">
+                <div class="button-menu button-menu_active">
+                  <div class="button-menu__img-box">
+                    <img
+                      class="button-menu__img"
+                      src="../../assets/images/coffee-menu/coffee-icon.png"
+                      alt="coffee-icon"
+                    />
+                  </div>
+                  <span class="button-menu__text">Coffee</span>
+                </div>
+                <div class="button-menu">
+                  <div class="button-menu__img-box">
+                    <img
+                      class="button-menu__img"
+                      src="../../assets/images/coffee-menu/tea-icon.png"
+                      alt="tea-icon"
+                    />
+                  </div>
+                  <span class="button-menu__text">Tea</span>
+                </div>
+                <div class="button-menu">
+                  <div class="button-menu__img-box">
+                    <img
+                      class="button-menu__img"
+                      src="../../assets/images/coffee-menu/dessert-icon.png"
+                      alt="dessert-icon"
+                    />
+                  </div>
+                  <span class="button-menu__text">Dessert</span>
+                </div>
+              </div>
+            </div>
+            <div class="ch-menu__row">
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Irish coffee</h2>
+                      <p class="ch-menu__text">
+                        Fragrant black coffee with Jameson Irish whiskey and whipped milk
+                      </p>
+                    </div>
+                    <span class="ch-menu__price">$7.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Kahlua coffee</h2>
+                      <p class="ch-menu__text">
+                        Classic coffee with milk and Kahlua liqueur under a cap of frothed milk
+                      </p>
+                    </div>
+                    <span class="ch-menu__price">$7.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Honey raf</h2>
+                      <p class="ch-menu__text">
+                        Espresso with frothed milk, cream and aromatic honey
+                      </p>
+                    </div>
+                    <span class="ch-menu__price">$5.50</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Ice cappuccino</h2>
+                      <p class="ch-menu__text">
+                        Cappuccino with soft thick foam in summer version with ice
+                      </p>
+                    </div>
+                    <span class="ch-menu__price">$5.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Espresso</h2>
+                      <p class="ch-menu__text">Classic black coffee</p>
+                    </div>
+                    <span class="ch-menu__price">$4.50</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Latte</h2>
+                      <p class="ch-menu__text">
+                        Espresso coffee with the addition of steamed milk and dense milk foam
+                      </p>
+                    </div>
+                    <span class="ch-menu__price">$5.50</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Latte macchiato</h2>
+                      <p class="ch-menu__text">Espresso with frothed milk and chocolate</p>
+                    </div>
+                    <span class="ch-menu__price">$5.50</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ch-menu__col">
+                <div class="ch-menu__item">
+                  <div class="ch-menu__img-box"></div>
+                  <div class="ch-menu__info">
+                    <div class="ch-menu__desc">
+                      <h2 class="ch-menu__subtitle">Coffee with cognac</h2>
+                      <p class="ch-menu__text">
+                        Fragrant black coffee with cognac and whipped cream
+                      </p>
+                    </div>
+                    <span class="ch-menu__price">$6.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ch-menu__button-refresh">
+              <button class="button-refresh">
+                <svg class="button-refresh-icon">
+                  <use xlink:href="../../assets/svg/sprite.svg#refresh"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer" id="contacts">
+        <div class="footer__container _container">
+          <div class="footer__box">
+            <div class="footer__row">
+              <div class="footer__content">
+                <div class="footer__header header-block">
+                  <h2 class="header-block__title">
+                    Sip, Savor, Smile. <span class="text_italic">It’s coffee time!</span>
+                  </h2>
+                </div>
+                <div class="footer__socials socials">
+                  <ul class="socials__list">
+                    <li class="socials__item">
+                      <a class="socials__link" href="https://twitter.com/?lang=en">
+                        <svg class="social-link-icon">
+                          <use xlink:href="../../assets/svg/sprite.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link" href="https://www.instagram.com/">
+                        <svg class="social-link-icon">
+                          <use xlink:href="../../assets/svg/sprite.svg#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="socials__item">
+                      <a class="socials__link" href="https://en-gb.facebook.com/">
+                        <svg class="social-link-icon">
+                          <use xlink:href="../../assets/svg/sprite.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__contacts contacts">
+                <h3 class="contacts__title">Contact us</h3>
+                <ul class="contacts__list">
+                  <li class="contacts__item image-link">
+                    <a
+                      class="contacts__link link"
+                      href="https://maps.app.goo.gl/2wCJArQoX7g6WhZb9"
+                      target="_blank"
+                    >
+                      <svg class="contact-icon">
+                        <use xlink:href="../../assets/svg/sprite.svg#pin-alt"></use>
+                      </svg>
+                      8558 Green Rd., &nbsp;LA
+                    </a>
+                  </li>
+                  <li class="contacts__item image-link">
+                    <a class="contacts__link link" href="tel:+16035550123">
+                      <svg class="contact-icon">
+                        <use xlink:href="../../assets/svg/sprite.svg#phone"></use>
+                      </svg>
+                      +1 (603) 555-0123
+                    </a>
+                  </li>
+                  <li class="contacts__item image-link">
+                    <a class="contacts__link link" href="#no_scroll">
+                      <svg class="contact-icon">
+                        <use xlink:href="../../assets/svg/sprite.svg#clock"></use>
+                      </svg>
+                      Mon-Sat: 9:00 AM – 23:00 PM
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--==================== SCRIPT JS ====================-->
+    <script src="script.js" defer></script>
+  </body>
+</html>
