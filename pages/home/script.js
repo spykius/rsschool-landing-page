@@ -1,4 +1,5 @@
-(function () {
+// Menu
+function initMenu() {
   const iconMenu = document.querySelector('.menu__icon');
   const menu = document.querySelector('.header__menu');
   const menuLinks = document.querySelectorAll('.menu__link');
@@ -7,15 +8,20 @@
     e.stopPropagation();
     iconMenu.classList.toggle('_active');
     menu.classList.toggle('_active');
+    document.body.classList.toggle('lock');
   });
 
   for (let i = 0; i < menuLinks.length; i++) {
     menuLinks[i].addEventListener('click', () => {
       iconMenu.classList.remove('_active');
       menu.classList.remove('_active');
+      document.body.classList.remove('lock');
     });
   }
+}
 
+// Theme
+function initTheme() {
   const themeBtn = document.querySelector('.theme-btn__container');
   const buttons = themeBtn.querySelectorAll('[data-theme]');
 
@@ -35,4 +41,9 @@
     if (!btn) return;
     applyTheme(btn.dataset.theme);
   });
-})();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initMenu();
+  initTheme();
+});
